@@ -1,5 +1,5 @@
 #!/bin/sh
-# Bare bines build script
+# Bare bones build script
 
 # Source setup env
 . build/envsetup.sh
