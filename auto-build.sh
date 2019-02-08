@@ -5,7 +5,7 @@
 . build/envsetup.sh
 
 # Make CV1 (LG Phoenix 4 / LG Aristo 2) chosen for build
-linch lineage_cv1-userdebug
+lunch lineage_cv1-userdebug
 
 # Before build
 croot
