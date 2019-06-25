@@ -1,25 +1,12 @@
 #!/bin/sh
-# Bare bones build script
 
-# Update Existing Repo's
-sudo apt-get update
+# Android x86 (PC) build script
 
-# Install git
-sudo apt-get install git
-
-# Install git gui
-sudo apt-get install gitk git-gui
-
-
-# Source setup env
+# Source env file(s)
 . build/envsetup.sh
 
-# Make cv1 (LG Phoenix 4 / LG Aristo 2) chosen for build
-lunch lineage_cv1-userdebug
+# Run our lunch command to select build
+lunch android_x86-eng
 
-# Before build
-croot
-
-# Start the build
-mka -j8 bacon # Use with amount of cores you have
-
+# Build the image
+m -j1 iso_img
